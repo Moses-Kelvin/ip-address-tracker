@@ -1,0 +1,81 @@
+.IpInfo {
+    display: grid;
+    justify-items: center;
+}
+
+.IPInfo-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    transform: translateY(-3rem);
+    padding: 1rem 0;
+    position: absolute;
+}
+
+.IPInfo-section h1 {
+    font-size: 1.4rem;
+    max-width: 10rem;
+}
+
+.IPInfo-section p {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.vertical-line {
+    background-color: grey;
+    height: 4rem;
+    width: 0.1rem;
+    margin-left: 3.2rem;
+}
+
+.IPInfo-section>div:nth-child(1),
+.IPInfo-section>div:nth-child(2),
+.IPInfo-section>div:nth-child(3) {
+    border-right: 1px solid gray;
+}
+
+.IPInfo-section>div:nth-child(1),
+.IPInfo-section>div:nth-child(2),
+.IPInfo-section>div:nth-child(3),
+.IPInfo-section>div:nth-child(4) {
+    width: 80%;
+    height: 80%;
+}
+
+@media (max-width: 500px) {
+    .IPInfo-section {
+        grid-template-columns: 1fr;
+        transform: translateY(-10rem);
+        text-align: center;
+    }
+
+    .IPInfo-section>div:nth-child(1),
+    .IPInfo-section>div:nth-child(2),
+    .IPInfo-section>div:nth-child(3) {
+        border-right: 0;
+    }
+
+    .IPInfo-section h1 {
+        max-width: 20rem;
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .IPInfo-section {
+        width: 90%;
+    }
+
+    .IPInfo-section h1 {
+        font-size: 1rem;
+    }
+}
