@@ -1,9 +1,9 @@
 .IpInfo {
-    display: grid;
-    justify-items: center;
-     width: 80%;
+     display: grid;
+     justify-items: center;
+     width: 100%;
      position: absolute;
-     top: 8rem;
+     top: 14rem;
      
 }
 
@@ -12,6 +12,7 @@
     grid-template-columns: repeat(4, 1fr);
     background-color: white;
     border-radius: 10px;
+    width:80%; 
     justify-items: center;
     padding: 1rem 0;
 }
@@ -45,7 +46,6 @@
 @media (max-width: 500px) {
     .IPInfo-section {
         grid-template-columns: 1fr;
-        transform: translateY(-10rem);
         text-align: center;
     }
 
