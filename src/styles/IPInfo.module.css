@@ -11,9 +11,9 @@
     width: 80%;
     margin: auto;
     justify-items: center;
-    transform: translateY(-3rem);
-    padding: 1rem 0;
     position: absolute;
+    top: 31%;
+    padding: 1rem 0;
 }
 
 .IPInfo-section h1 {
@@ -26,13 +26,6 @@
     font-size: 0.75rem;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-.vertical-line {
-    background-color: grey;
-    height: 4rem;
-    width: 0.1rem;
-    margin-left: 3.2rem;
 }
 
 .IPInfo-section>div:nth-child(1),
